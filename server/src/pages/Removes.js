@@ -44,6 +44,7 @@ export const Removes = () => {
                                     <th scope="col">тайёр болишь вакти </th>
                                     <th scope="col">нархи</th>
                                     <th scope="col">delete</th>
+                                    <th scope="col">Hisobot</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -80,12 +81,17 @@ export const Removes = () => {
                                         </div>
                                     </form>
                                     </td>
+                                    <td>
+                                        <p className="pl">{item?.hisob}</p>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>
                     </>
                 )
-            })}
+                
+            }
+            )}
         </React.Fragment>
     )}
 

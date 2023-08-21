@@ -1,5 +1,6 @@
 const Todo = require('../modules/todo')
-
+var r = 0;
+var result;
     // malumot yaratish POST
     exports.createEvent = async (req, res, next) => {
         const result = new Todo({
@@ -8,7 +9,8 @@ const Todo = require('../modules/todo')
             number:req.body.number,
             time:req.body.time,
             cash:req.body.cash,
-            tayyor:req.body.tayyor
+            tayyor:req.body.tayyor,
+            hisob: Number(  r = r + Number(req.body.cash))
         })
         await result.save()
         .then(()=>{

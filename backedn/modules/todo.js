@@ -13,11 +13,12 @@ const todoSchema = mongoose.Schema({
         type: String, require: true
     },
     cash:{
-        type: String, require: true
+        type: Number, require: true
     },
     tayyor:{
         type:Boolean, require: true
-    }
+    },
+    hisob: Number
 })
 
 module.exports = mongoose.model("todo" , todoSchema)
